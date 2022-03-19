@@ -1,9 +1,11 @@
+import { NextPageWithLayout } from '@/models';
+import styles from '@/styles/Home.module.scss';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Home.module.scss';
+import { MainLayout } from '../components/layouts';
 
-const Home: NextPage = () => {
+const Home: NextPageWithLayout = () => {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -74,5 +76,7 @@ const Home: NextPage = () => {
 		</div>
 	);
 };
+
+Home.Layout = MainLayout;
 
 export default Home;

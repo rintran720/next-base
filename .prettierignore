@@ -1,0 +1,10 @@
+# Ignore artifacts:
+public
+.next
+node_modules
+
+# Ignore all files:
+*.html
+*.jpg
+./package-lock.json
+./yarn.lock

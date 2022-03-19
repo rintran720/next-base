@@ -7,7 +7,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"prettier": "./node_modules/.bin/prettier write ."
+		"prettier": "npx prettier write './src/**' '!./src/**/*.jpg'"
 	},
 	"dependencies": {
 		"next": "12.1.0",
